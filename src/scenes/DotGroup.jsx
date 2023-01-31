@@ -1,8 +1,12 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { useSelector, useDispatch } from 'react-redux';
+import { tooglePage } from "../redux/ducks/slice";
 
-const DotGroup = ({ selectedPage, setSelectedPage }) => {
+const DotGroup = () => {
   const selectedStyles = `relative bg-yellow before:absolute before:w-6 before:h-6 before:rounded-full
     before:border-2 before:border-yellow before:left-[-50%] before:top-[-50%]`;
+    const selectedPage = useSelector((state) => state.page.selectedPage);
+    const dispatch = useDispatch();
 
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-7">
@@ -11,7 +15,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "home" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("home")}
+        onClick={() => dispatch(tooglePage("home"))}
       />
 
       <AnchorLink
@@ -19,7 +23,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "skills" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("skills")}
+        onClick={() => dispatch(tooglePage("skills"))}
       />
 
       <AnchorLink
@@ -27,7 +31,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "projects" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("projects")}
+        onClick={() => dispatch(tooglePage("projects"))}
       />
 
       <AnchorLink
@@ -35,7 +39,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "testimonials" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("testimonials")}
+        onClick={() => dispatch(tooglePage("testimonials"))}
       />
 
       <AnchorLink
@@ -43,7 +47,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         className={`${
           selectedPage === "contact" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("contact")}
+        onClick={() => dispatch(tooglePage("contact"))}
       />
     </div>
   );
