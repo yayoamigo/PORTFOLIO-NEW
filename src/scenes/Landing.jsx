@@ -2,9 +2,13 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { useDispatch } from "react-redux";
+import { tooglePage } from "../redux/ducks/slice";
 
-const Landing = ({ setSelectedPage }) => {
+
+const Landing = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+  const dispatch = useDispatch()
   return (
     <section
       id="home"
@@ -32,11 +36,6 @@ const Landing = ({ setSelectedPage }) => {
     />
   )}
 </div>
-
-
-
-
-
 
       {/* MAIN TEXT */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32">
@@ -82,14 +81,14 @@ const Landing = ({ setSelectedPage }) => {
           <AnchorLink
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
-            onClick={() => setSelectedPage("contact")}
+            onClick={() => dispatch(tooglePage("contact"))}
             href="#contact"
           >
             Contact Me
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
+            onClick={() => dispatch(tooglePage("contact"))}
             href="#contact"
           >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
