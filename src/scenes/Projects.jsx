@@ -57,7 +57,7 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-        I've completed more than 30 projects,including front-end,full-stack,back-end,games...
+        I've completed more than 30 projects,including front-end,full-stack,back-end,games
         </p>
       </motion.div>
 
