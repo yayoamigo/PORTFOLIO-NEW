@@ -8,24 +8,26 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 mb-1"
     >
       {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
   {isAboveLarge ? (
     <div
-      className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-400px before:w-full before:max-w-400px md:before:max-w-600px before:h-full before:border-2 before:border-blue before:z-[-1]"
+      className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
+       before:w-full before:max-w-400px md:before:max-w-400px before:h-full before:border-2
+        before:border-blue before:z-[-1]"
     >
       <img
         alt="profile"
-        className="hover:filter rounded-t-400px rounded-b-0 hover:saturate-200 transition duration-500 z-10 w-full max-w-400px md:max-w-600px"
+        className="hover:filter rounded-t-[400px]  hover:saturate-200 transition duration-500 z-10 w-full max-w-400px md:max-w-600px"
         src="assets/yo.png"
       />
     </div>
   ) : (
     <img
       alt="profile"
-      className="z-10 rounded-t-400px rounded-b-0 w-full max-w-400px md:max-w-600px"
+      className="z-10 rounded-t-[400px]  w-full max-w-400px md:max-w-400px"
       src="assets/yo.png"
     />
   )}
@@ -52,17 +54,16 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             David {""}
             <span
-              className="xs:relative xs:text-white
-             xs:font-semibold z-20 xs:before:content-brush
+              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
               before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
             >
-              Zambrano
+              Zamb
             </span>
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+          I am a full-stack software developer with 3+ years of experience and a 
+          passion for innovation and creativity.
           </p>
         </motion.div>
 
