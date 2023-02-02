@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = { selectedPage: "home", isTopOfPage: true, isMenuToggled: true };
+const initialState = { selectedPage: "home", isTopOfPage: true, isMenuToggled: false };
 
 const Slice = createSlice({
     name: 'Change',
