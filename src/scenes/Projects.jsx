@@ -57,7 +57,7 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-        I've completed more than 30 projects,including front-end,full-stack,back-end,games.
+        I've completed more than 40 projects,including front-end,full-stack,back-end,games.
         </p>
       </motion.div>
 
@@ -79,14 +79,14 @@ const Projects = () => {
           </div>
           <Project title="Space-Travelrs" description="is a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions. 
           The application works with real live data from the SpaceX API." />
-          <Project title="Air-Polution" description="This React capstone project is about building a mobile web application to check a list of metrics (numeric values) that were created by making use of React and Redux. An API (OpenWeahter) was chosen to provide 
+          <Project title="Air-Polution" description="Mobile web application to check a list of metrics (numeric values) that were created by making use of React and Redux. An API (OpenWeahter) was chosen to provide 
           numeric data and then build the web app around it." />
 
           {/* ROW 2 */}
           <Project title="Tomatito-VS-Stairs" description="This game was inspired by my dog tomatito, his farts and his fear for stairs" />
           <Project title="Math-Magicians" description="is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make a simple calculations and read a random math-related quote.
            Built with React, Sass and JavaScript."/>
-          <Project title="Pokedex-app" description="Pokemon API is a web application based on external APIs. We selected an API that provides data about pokemons and then build the webapp for it. The webapp has two interfaces, the home page showing a list of items that you can like, and the popup window with 
+          <Project title="Pokedex-app" description="I've selected an API that provides data about pokemons and then build the webapp for it. The webapp has two interfaces, the home page showing a list of items that you can like, and the popup window with 
           more data about an item that you can use to comment on."/>
 
           {/* ROW 3 */}
