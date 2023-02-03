@@ -73,13 +73,13 @@ const Projects = () => {
           <Project title="Air-Polution" />
 
           {/* ROW 2 */}
-          <Project title="toma"  />
+          <Project title="Bookstore-CMS" />
           <Project title="Math-Magicians" />
           <Project title="Pokedex-app" />
 
           {/* ROW 3 */}
           <Project title="Nassa-Missions" />
-          <Project title="Bookstore-CMS" />
+          <Project title="Tomatito-VS-Stairs" />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
