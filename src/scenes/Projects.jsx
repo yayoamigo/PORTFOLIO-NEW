@@ -15,19 +15,11 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, description }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+const Project = ({ title }) => {
   const projectTitle = title;
 
   return (
     <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-        {description}
-        </p>
-      </div>
       <img className="max-h-[250px]" src={`assets/${projectTitle}.png`} alt={projectTitle} />
     </motion.div>
   );
@@ -77,22 +69,17 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Space-Travelrs" description="is a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions. 
-          The application works with real live data from the SpaceX API." />
-          <Project title="Air-Polution" description="Mobile web application to check a list of metrics (numeric values) that were created by making use of React and Redux. An API (OpenWeahter) was chosen to provide 
-          numeric data and then build the web app around it." />
+          <Project title="Space-Travelrs" />
+          <Project title="Air-Polution" />
 
           {/* ROW 2 */}
-          <Project title="toma" description="This game was inspired by my dog tomatito, his farts and his fear for stairs" />
-          <Project title="Math-Magicians" description="is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make a simple calculations and read a random math-related quote.
-           Built with React, Sass and JavaScript."/>
-          <Project title="Pokedex-app" description="I've selected an API that provides data about pokemons and then build the webapp for it. The webapp has two interfaces, the home page showing a list of items that you can like, and the popup window with 
-          more data about an item that you can use to comment on."/>
+          <Project title="toma"  />
+          <Project title="Math-Magicians" />
+          <Project title="Pokedex-app" />
 
           {/* ROW 3 */}
-          <Project title="Nassa-Missions" description="Welcome to the NASA Exoplanet Mission Simulator, a full stack application that allows users to launch and abort 
-          simulated missions to exoplanets using real data from NASA." />
-          <Project title="Bookstore-CMS" description="It is a MVP version of it that allows you to display a list of books, add a book and remove a selected book. Built with React, Sass and JavaScript." />
+          <Project title="Nassa-Missions" />
+          <Project title="Bookstore-CMS" />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
