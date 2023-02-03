@@ -7,10 +7,10 @@ import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Testimonials from "./scenes/Testimonials";
 import { motion } from "framer-motion";
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { tooglePage, toogleTop } from "./redux/ducks/slice";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="app bg-deep-blue">
