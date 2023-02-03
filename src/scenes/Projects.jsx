@@ -20,7 +20,7 @@ const Project = ({ title }) => {
 
   return (
     <motion.div variants={projectVariant} className="relative">
-      <img className="max-h-[250px]" src={`assets/${projectTitle}.png`} alt={projectTitle} />
+      <img className="max-h-[250px] max-w-250px object-cover" src={`assets/${projectTitle}.png`} alt={projectTitle} />
     </motion.div>
   );
 };
@@ -49,7 +49,7 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-        I've completed more than 40 projects,including front-end,full-stack,back-end,games.
+        I've completed more than 40 projects,including front-end,full-stack,back-end,games...
         </p>
       </motion.div>
 
