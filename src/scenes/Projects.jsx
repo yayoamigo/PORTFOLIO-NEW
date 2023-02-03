@@ -28,7 +28,7 @@ const Project = ({ title, description }) => {
         {description}
         </p>
       </div>
-      <img className="min-h-[280px]" src={`./assets/${projectTitle}.png`} alt={projectTitle} />
+      <img className="max-h-[400px]" src={`assets/${projectTitle}.png`} alt={projectTitle} />
     </motion.div>
   );
 };
@@ -83,7 +83,7 @@ const Projects = () => {
           numeric data and then build the web app around it." />
 
           {/* ROW 2 */}
-          <Project title="Tomatito-VS-Stairs" description="This game was inspired by my dog tomatito, his farts and his fear for stairs" />
+          <Project title="toma" description="This game was inspired by my dog tomatito, his farts and his fear for stairs" />
           <Project title="Math-Magicians" description="is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make a simple calculations and read a random math-related quote.
            Built with React, Sass and JavaScript."/>
           <Project title="Pokedex-app" description="I've selected an API that provides data about pokemons and then build the webapp for it. The webapp has two interfaces, the home page showing a list of items that you can like, and the popup window with 
