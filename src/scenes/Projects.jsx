@@ -28,7 +28,7 @@ const Project = ({ title, description }) => {
         {description}
         </p>
       </div>
-      <img className="max-h-[400px]" src={`assets/${projectTitle}.png`} alt={projectTitle} />
+      <img className="max-h-[300px]" src={`assets/${projectTitle}.png`} alt={projectTitle} />
     </motion.div>
   );
 };
@@ -73,7 +73,7 @@ const Projects = () => {
           {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[420px] max-h-[400px] text-2xl font-playfair font-semibold"
+              min-w-[420px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             BEAUTIFUL USER INTERFACES
           </div>
@@ -95,7 +95,7 @@ const Projects = () => {
           <Project title="Bookstore-CMS" description="It is a MVP version of it that allows you to display a list of books, add a book and remove a selected book. Built with React, Sass and JavaScript." />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[420px] max-h-[400px] text-2xl font-playfair font-semibold"
+              min-w-[420px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             SMOOTH USER EXPERIENCE
           </div>
