@@ -28,7 +28,7 @@ const Project = ({ title, description }) => {
         {description}
         </p>
       </div>
-      <img className="max-h-[280px] max-w-[500px]" src={`assets/${projectTitle}.png`} alt={projectTitle} />
+      <img className="max-h-[250px] " src={`assets/${projectTitle}.png`} alt={projectTitle} />
     </motion.div>
   );
 };
