@@ -20,7 +20,7 @@ const Project = ({ title }) => {
 
   return (
     <motion.div variants={projectVariant} className="relative">
-      <img className="max-h-[250px] max-w-250px object-cover" src={`assets/${projectTitle}.png`} alt={projectTitle} />
+      <img className="max-h-[250px] max-w-[300px] object-cover" src={`assets/${projectTitle}.png`} alt={projectTitle} />
     </motion.div>
   );
 };
@@ -65,7 +65,7 @@ const Projects = () => {
           {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[550px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             BEAUTIFUL USER INTERFACES
           </div>
@@ -82,7 +82,7 @@ const Projects = () => {
           <Project title="Bookstore-CMS" />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[550px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             SMOOTH USER EXPERIENCE
           </div>
