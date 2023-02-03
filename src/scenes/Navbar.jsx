@@ -80,23 +80,23 @@ const Navbar = () => {
             <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
               <Link
                 page="Home"
-                onClick={() => dispatch(toogleMenu(!isMenuToggled))}
+              
               />
               <Link
                 page="Skills"
-                onClick={() => dispatch(toogleMenu(!isMenuToggled))}
+               
               />
               <Link
                 page="Projects"
-                onClick={() => dispatch(toogleMenu(!isMenuToggled))}
+               
               />
               <Link
                 page="Testimonials"
-                onClick={() => dispatch(toogleMenu(!isMenuToggled))}
+               
               />
               <Link
                 page="Contact"
-                onClick={() => dispatch(toogleMenu(!isMenuToggled))}
+               
               />
             </div>
           </div>
