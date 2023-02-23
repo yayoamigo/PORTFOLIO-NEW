@@ -15,11 +15,20 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project = ({ title, link }) => {
+  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title;
-
+  const projectLink = link;
+  const goToExternalUrl = (url) => {
+    window.open(url, "_blank");
+  };
   return (
     <motion.div variants={projectVariant} className="relative">
+       <div className={overlayStyles}>
+        <p className="text-2xl font-playfair">{title}</p>
+        <button className="absolute bottom-5 right-50% bg-red text-white p-2 " onClick={() => goToExternalUrl(projectLink)}> see more </button>
+      </div>
       <img className="max-h-[250px] max-w-[500px] object-cover" src={`assets/${projectTitle}.png`} alt={projectTitle} />
     </motion.div>
   );
@@ -69,17 +78,17 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Space-Travelrs" />
-          <Project title="Air-Polution" />
+          <Project link="https://github.com/yayoamigo?tab=repositories" title="Space-Travelrs" />
+          <Project link="https://github.com/yayoamigo?tab=repositories" title="Air-Polution" />
 
           {/* ROW 2 */}
-          <Project title="Bookstore-CMS" />
-          <Project title="Math-Magicians" />
-          <Project title="Pokedex-app" />
+          <Project link="https://github.com/yayoamigo?tab=repositories" title="Bookstore-CMS" />
+          <Project link="https://github.com/yayoamigo?tab=repositories" title="Math-Magicians" />
+          <Project link="https://github.com/yayoamigo?tab=repositories" title="Pokedex-app" />
 
           {/* ROW 3 */}
-          <Project title="Nassa-Missions" />
-          <Project title="Tomatito-VS-Stairs" />
+          <Project link="https://github.com/yayoamigo?tab=repositories" title="Nassa-Missions" />
+          <Project link="https://github.com/yayoamigo?tab=repositories" title="Tomatito-VS-Stairs" />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[500px] max-h-[400px] text-2xl font-playfair font-semibold"
@@ -93,3 +102,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
