@@ -78,12 +78,10 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="Space-Travelrs" />
-          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="Air-Polution" />
+          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="pin" />
+          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="smili" />
 
           {/* ROW 2 */}
-          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="Bookstore-CMS" />
-          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="Math-Magicians" />
           <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="Pokedex-app" />
 
           {/* ROW 3 */}
