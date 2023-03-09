@@ -78,8 +78,8 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="pin" />
-          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="smili" />
+          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="PinPal" />
+          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="smilewave" />
 
           {/* ROW 2 */}
           <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="Pokedex-app" />
