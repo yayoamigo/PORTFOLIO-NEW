@@ -25,14 +25,14 @@ const Landing = () => {
       <img
         alt="profile"
         className="hover:filter rounded-t-[400px]  hover:saturate-200 transition duration-500 z-10 w-full max-w-400px md:max-w-600px"
-        src="assets/yo.png"
+        src="./assets/yo.png"
       />
     </div>
   ) : (
     <img
       alt="profile"
       className="z-10 rounded-t-[400px]  w-full max-w-400px md:max-w-400px"
-      src="assets/yo.png"
+      src="./assets/yo.png"
     />
   )}
 </div>

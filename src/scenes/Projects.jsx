@@ -82,7 +82,7 @@ const Projects = () => {
           <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="smilewave" />
 
           {/* ROW 2 */}
-          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="Pokedex-app" />
+          <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="zucatto" />
 
           {/* ROW 3 */}
           <Project h={250} link="https://github.com/yayoamigo?tab=repositories" title="Nassa-Missions" />

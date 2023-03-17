@@ -70,7 +70,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-           HTML, CSS, Tailwind, React, Redux, Javascript, GitHub, Jest, Webpack, Responsive-Design.
+           HTML, CSS, Tailwind, React, Redux, Angular, Javascript, GitHub, Jest, Webpack, Responsive-Design.
           </p>
         </motion.div>
 
@@ -96,7 +96,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Node.js, Express, Restful-API, Helmet, Passport, AWS, Docker, MongoDB, PostgreSQL
+            Node.js, .NET, Express, Restful-API, SOAP, AWS, Azure, Docker, MongoDB, PostgreSQL
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
